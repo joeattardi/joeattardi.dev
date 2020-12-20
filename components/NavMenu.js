@@ -14,6 +14,7 @@ export default function NavMenu() {
     'dark:bg-white',
     'rounded-full',
     'transition',
+    'duration-300',
     'motion-reduce:transition-none',
     'ease-in-out'
   ]
@@ -26,7 +27,8 @@ export default function NavMenu() {
   });
 
   const middleClasses = classNames(...commonClasses, {
-    'opacity-0': isOpen
+    'opacity-0': isOpen,
+    'bg-white': isOpen
   });
 
   const bottomClasses = classNames(...commonClasses, {
@@ -70,9 +72,9 @@ export default function NavMenu() {
       </button>
       <nav className={navClasses}>
         <ul className="flex flex-col justify-center h-full lg:flex-row lg:justify-end">
-          <NavMenuLink>Books</NavMenuLink>
-          <NavMenuLink>Projects</NavMenuLink>
-          <NavMenuLink>Blog</NavMenuLink>
+          <NavMenuLink href="/books">Books</NavMenuLink>
+          <NavMenuLink href="/projects">Projects</NavMenuLink>
+          <NavMenuLink href="/blog">Blog</NavMenuLink>
         </ul>
       </nav>
     </>
