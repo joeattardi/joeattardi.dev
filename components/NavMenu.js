@@ -27,6 +27,8 @@ export default function NavMenu() {
 
   const middleClasses = classNames(...commonClasses, {
     'opacity-0': isOpen,
+    'transform': isOpen,
+    'scale-0': isOpen
   });
 
   const bottomClasses = classNames(...commonClasses, {
