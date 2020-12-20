@@ -21,7 +21,8 @@ export default function NavMenu() {
   const topClasses = classNames(...commonClasses, {
     'transform': isOpen,
     'rotate-45': isOpen,
-    'translate-y-3': isOpen
+    'translate-y-3': isOpen,
+    'bg-white': isOpen
   });
 
   const middleClasses = classNames(...commonClasses, {
@@ -31,7 +32,8 @@ export default function NavMenu() {
   const bottomClasses = classNames(...commonClasses, {
     'transform': isOpen,
     '-rotate-45': isOpen,
-    '-translate-y-3': isOpen
+    '-translate-y-3': isOpen,
+    'bg-white': isOpen
   });
 
   const navClasses = classNames(
@@ -42,6 +44,7 @@ export default function NavMenu() {
     'z-10',
     'fixed',
     'lg:static',
+    'text-white',
     'inset-0',
     {
       'hidden': !isOpen,
