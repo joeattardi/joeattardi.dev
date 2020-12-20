@@ -9,8 +9,10 @@ export default function NavMenu() {
     'h-1',
     'w-full',
     'bg-black',
+    'dark:bg-white',
     'rounded-full',
     'transition',
+    'motion-reduce:transition-none',
     'ease-in-out'
   ]
 
