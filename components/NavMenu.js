@@ -10,7 +10,7 @@ export default function NavMenu() {
   const commonClasses = [
     'h-1',
     'w-full',
-    'bg-black',
+    'bg-white',
     'dark:bg-white',
     'rounded-full',
     'transition',
@@ -22,20 +22,17 @@ export default function NavMenu() {
   const topClasses = classNames(...commonClasses, {
     'transform': isOpen,
     'rotate-45': isOpen,
-    'translate-y-3': isOpen,
-    'bg-white': isOpen
+    'translate-y-2.5': isOpen,
   });
 
   const middleClasses = classNames(...commonClasses, {
     'opacity-0': isOpen,
-    'bg-white': isOpen
   });
 
   const bottomClasses = classNames(...commonClasses, {
     'transform': isOpen,
     '-rotate-45': isOpen,
-    '-translate-y-3': isOpen,
-    'bg-white': isOpen
+    '-translate-y-2.5': isOpen,
   });
 
   const navClasses = classNames(
@@ -65,7 +62,7 @@ export default function NavMenu() {
 
   return (
     <>
-      <button onClick={toggle} className="lg:hidden z-20 absolute right-4 w-11 h-12 rounded-full p-1 py-2.5 flex flex-col justify-between">
+      <button onClick={toggle} className="lg:hidden z-20 absolute right-4 w-12 h-12 rounded-full bg-blue-400 p-2 py-3 flex flex-col justify-between">
         <div className={topClasses}></div>
         <div className={middleClasses}></div>
         <div className={bottomClasses}></div>
