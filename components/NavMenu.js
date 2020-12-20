@@ -73,7 +73,7 @@ export default function NavMenu() {
         <ul className="flex flex-col justify-center h-full lg:flex-row lg:justify-end">
           <NavMenuLink href="/books">Books</NavMenuLink>
           <NavMenuLink href="/projects">Projects</NavMenuLink>
-          <NavMenuLink href="/blog">Blog</NavMenuLink>
+          <NavMenuLink href="https://joeattardi.codes">Blog</NavMenuLink>
         </ul>
       </nav>
     </>
