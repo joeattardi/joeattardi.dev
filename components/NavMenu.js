@@ -45,11 +45,16 @@ export default function NavMenu() {
     'fixed',
     'lg:static',
     'text-white',
+    'lg:text-black',
+    'lg:dark:text-white',
     'inset-0',
-    {
-      'hidden': !isOpen,
-      'lg:block': !isOpen
-    }
+    'transform',
+    'transition',
+    'duration-300',
+    'lg:opacity-100',
+    'lg:translate-y-0',
+    isOpen ? 'opacity-100' : 'opacity-0',
+    isOpen ? 'translate-y-0' : '-translate-y-full'
   )
 
   function toggle() {
