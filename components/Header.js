@@ -1,5 +1,7 @@
 import Link from 'next/link';
 
+import { faCode } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 
 import NavMenu from './NavMenu';
@@ -8,7 +10,7 @@ export default function Header({ transparent }) {
 
   const headerClasses = classNames(
     'lg:p-2',
-    'p-4',
+    'p-6',
     'dark:text-white',
     {
       'bg-blue-50': !transparent,
@@ -22,8 +24,8 @@ export default function Header({ transparent }) {
     <header className={headerClasses}>
       <div className="flex flex-row items-center justify-center sm:justify-start max-w-screen-xl mx-auto">
         <div className="flex flex-col items-center sm:flex-row flex-grow sm:space-x-4">
-          <Link href="/"><a><img className="rounded-full lg:w-12 lg:h-12 w-20 h-20 bg-blue-200" src="/joe.png" /></a></Link>
-          <Link href="/"><a><h1 className="text-4xl lg:text-3xl uppercase font-light">Joe Attardi</h1></a></Link>
+          <div className="hidden lg:block"><Link href="/"><a className="text-gray-400"><FontAwesomeIcon icon={faCode} size="lg" /></a></Link></div>
+          <Link href="/"><a><h1 className="text-3xl uppercase font-light">Joe Attardi</h1></a></Link>
         </div>
         <NavMenu />
       </div>

@@ -64,7 +64,7 @@ export default function NavMenu() {
 
   return (
     <>
-      <button onClick={toggle} className="lg:hidden z-20 absolute right-4 w-12 h-12 rounded-full bg-blue-400 p-2 py-3 flex flex-col justify-between">
+      <button onClick={toggle} className="lg:hidden z-20 absolute right-4 w-12 h-12 rounded-full p-2 py-3 flex flex-col justify-between">
         <div className={topClasses}></div>
         <div className={middleClasses}></div>
         <div className={bottomClasses}></div>
