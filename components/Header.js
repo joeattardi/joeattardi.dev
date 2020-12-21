@@ -10,7 +10,7 @@ export default function Header({ transparent }) {
 
   const headerClasses = classNames(
     'lg:p-2',
-    'p-6',
+    'p-4',
     'dark:text-white',
     {
       'bg-blue-50': !transparent,

@@ -10,7 +10,7 @@ export default function NavMenu() {
   const commonClasses = [
     'h-1',
     'w-full',
-    'bg-white',
+    isOpen ? 'bg-white' : 'bg-black',
     'dark:bg-white',
     'rounded-full',
     'transition',
