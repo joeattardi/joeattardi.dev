@@ -14,7 +14,7 @@ export default function Footer() {
           <FooterSocialLink icon={faCodepen} href="https://codepen.io/thinksInCode" />
           <FooterSocialLink icon={faEnvelope} href="mailto:jattardi@gmail.com" />
         </section>
-        <div className="p-4 text-center">&copy; 2020 Joe Attardi</div>
+        <div className="p-4 text-center">&copy; 2020 Joe Attardi 🇺🇸</div>
       </div>
     </footer>
   );

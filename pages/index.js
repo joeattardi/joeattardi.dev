@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <Layout>
       <div className="p-4 max-w-screen-xl mx-auto w-full">
-        <section className="flex flex-col lg:flex-row items-center lg:space-x-4">
+        <section className="flex flex-col lg:flex-row items-center lg:space-x-4 lg:p-8">
             <img className="w-48 h-48 bg-gray-700 rounded-full border-4 dark:border-gray-500" src="/joe.png" />
             <div>
               <p className="m-2 mt-4">
