@@ -74,6 +74,7 @@ export default function NavMenu() {
           <NavMenuLink href="/books">Books</NavMenuLink>
           <NavMenuLink href="/projects">Projects</NavMenuLink>
           <NavMenuLink href="https://joeattardi.codes">Blog</NavMenuLink>
+          <NavMenuLink href="/uses">Uses</NavMenuLink>
         </ul>
       </nav>
     </>
