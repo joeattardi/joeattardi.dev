@@ -8,7 +8,7 @@ export default function BookItem({ image, amazonLink, apressLink, children, year
         <p>
           {children}
         </p>
-        <div className="flex flex-col items-center w-full">
+        <div className="flex flex-col items-center lg:items-start w-full">
           <a className="bg-blue-700 transition hover:bg-blue-600 m-2 px-4 py-2 w-full lg:w-96 text-center rounded-full text-white" href={amazonLink}>Buy from Amazon</a>
           <a className="bg-blue-700 transition hover:bg-blue-600 m-2 px-4 py-2 w-full lg:w-96 text-center rounded-full text-white" href={apressLink}>Buy from Apress</a>
         </div>
